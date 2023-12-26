@@ -23,7 +23,7 @@ const PrivateRoute = () => {
     }
 
     useEffect(()=>{
-        getUserAuth()
+       getUserAuth()
         },[])
 
     // La fonction de logOut

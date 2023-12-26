@@ -6,7 +6,7 @@ exports.isAuth=async (req,res,next)=>{
     try {
         const token=req.header('Authorization')
         
-        var decoded=jwt.verify(token.process.env.privateKey)
+        var decoded=jwt.verify(token,process.env.privateKey)
         if(!decoded){
             return res.json({errors})
         }
